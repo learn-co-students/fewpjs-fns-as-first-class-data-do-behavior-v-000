@@ -33,8 +33,10 @@ function greet(timeInput) {
 
 function displayMessage(textThing) {
   let newMessage = document.querySelector('h1#greeting'); //Create element
-  newMessage.id = `displaythis`; //Add id
-  newMessage.innerHTML = `${textThing}`; //Text
-  console.log(newMessage)
-  document.body.appendChild(newMessage); //Add to html file
+  //newMessage.innerHTML = `${textThing}`; //Text
+  //not needed textthing is a string
+  newMessage.innerHTML = textThing;
+  //console.log(newMessage)
+  //document.body.appendChild(newMessage); //Add to html file
+  //document.getElementById('greeting').innerText = textThing //Charlotte Dry'd this out
 }
