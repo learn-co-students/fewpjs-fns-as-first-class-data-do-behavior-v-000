@@ -31,7 +31,7 @@ function greet(timeInput) {
   }
 }
 
-function displayMessage(textThing) {
+function displayMessage(textThing = `TEST`) {
   let newMessage = document.querySelector('h1#greeting'); //Create element
   //newMessage.innerHTML = `${textThing}`; //Text
   //not needed textthing is a string
