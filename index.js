@@ -1,5 +1,3 @@
-/* Given Code, don't edit */
-
 document.querySelector("button").addEventListener("click", handleClick);
 
 function handleClick(e) {
@@ -7,7 +5,37 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 
-/* End Given Code, don't edit above here...*/
+function greet(string) {
+    let currentHour = parseInt(string, 10);
+    console.log("CURRENTHOUR:", currentHour);
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+    if (currentHour < 12) {
+      return "Good Morning"
+    }
+    else if (currentHour > 17) {
+      return "Good Evening"
+    }
+    else {
+      return "Good Afternoon"
+    }
+}
+
+/*MY ORIGINAL CODE:
+function greet(string) {
+  let array = string.split(':');
+  let currentHour = parseInt(array[0]);
+
+  if (currentHour < 12) {
+    return "Good Morning"
+  }
+  else if (currentHour > 17) {
+    return "Good Evening"
+  }
+  else if (currentHour < 17) {
+    return "Good Afternoon"
+  }
+}*/
+
+function displayMessage(string) {
+  document.getElementById("greeting").innerText = string;
+}
