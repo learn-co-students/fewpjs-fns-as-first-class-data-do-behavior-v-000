@@ -31,7 +31,7 @@ function greet(string) {
   else if (currentHour > 17) {
     return "Good Evening"
   }
-  else if (12 < parseInt(array[0]) < 17) {
+  else if (currentHour < 17) {
     return "Good Afternoon"
   }
 }*/
