@@ -19,6 +19,8 @@ function greet(strTime){
     return "Good Afternoon";
   }else if (intHour>17 && intHour<24) {
     return "Good Evening";
+  }else{
+    return "Good Day";
   }
 }
 /* Write your implementation of displayMessage() */
