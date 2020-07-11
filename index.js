@@ -9,9 +9,14 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
+// The greet function should take one argument, a String which specifies the 24-hour time in the format HH:MM.
+// If the time is earlier than 12pm, return "Good Morning".
+// If the time is between 12pm and 5pm, return "Good Afternoon".
+// If the time is later than 5pm, return "Good Evening".
+
 /* Write your implementation of greet() */
 function greet(timeString) {
-  const time = parseInt(timeString.split(":")[0])
+  const time = parseInt(timeString.split(":")[0]);
 
   if (time < 12) {
     return "Good Morning";
@@ -24,5 +29,5 @@ function greet(timeString) {
 
 /* Write your implementation of displayMessage() */
 function displayMessage(message){
-  document.getElementById("greeting").innerText = message
+  document.getElementById("greeting").innerText = message;
 }
