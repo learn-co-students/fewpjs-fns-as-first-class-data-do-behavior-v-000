@@ -12,14 +12,27 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 
 function greet(timeString){
-
-  if (timeString < 12){
+ 
+  let x = parseInt(timeString)
+  if (x < 12){
     return "Good Morning"
   }
-  else if (timeString >= 12 && timeString <= 17) {
+  else if (x >= 12 && x <= 17) {
     return "Good Afternoon"
   }
   else { 
     return "Good Evening"
   }
+  
+}
 /* Write your implementation of displayMessage() */
+function displayMessage(timeString) {
+  // let content = "TEST"
+  // displayMessage(content)
+  // let newString = content.replace('TEST', 'timeString')
+  // console.log(newString)
+  let x = document.getElementById("greeting").innerHTML = timeString;
+  
+
+  console.log(timeString)
+}
